@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "methinksSDK-iOS"
-  spec.version      = "0.3.3"
+  spec.version      = "0.3.4"
   spec.summary      = "methinks iOS SDK for in-app survey and live intercept"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => 'https://hansimmmi@bitbucket.org/funner/methinkssdk-ios.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://github.com/methinksBot/methinks-iOS.git', :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -1,0 +1,6 @@
+framework module methinksiOS {
+  umbrella header "methinksiOS.h"
+
+  export *
+  module * { export * }
+}
