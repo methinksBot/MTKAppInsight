@@ -8,6 +8,6 @@
 
 #ifndef methinksiOS_h
 #define methinksiOS_h
-
-#import <methinksiOS/MTKSDK.h>
+#import "MTKSDK.h"
+//#import <methinksiOS/MTKSDK.h>
 #endif /* methinksiOS_h */
