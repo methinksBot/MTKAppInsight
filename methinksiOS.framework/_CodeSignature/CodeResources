@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		rGzCrarEH0iMlwrQM0PR1hSIyCE=
+		2MIY2vIRAIas6LJBoPEOGbp5Yhw=
 		</data>
 		<key>Headers/MTKSDK.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oOZYHtvGZD4BPXC98MBQu+aT5vw=
+		7ndtY0t3tNj4qLSylDSX+m0VuZ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,11 +80,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rGzCrarEH0iMlwrQM0PR1hSIyCE=
+			2MIY2vIRAIas6LJBoPEOGbp5Yhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YGaa2x7blP6JGhrFV4MHztA4qzKOUpKZyDyFTkQsMXw=
+			UIV7MsPhZ28GaK15hTXU8k0OCNNiuHqIk9cAjnCeicU=
 			</data>
 		</dict>
 		<key>Headers/MTKSDK.h</key>
