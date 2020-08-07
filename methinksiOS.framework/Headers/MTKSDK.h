@@ -99,6 +99,14 @@ During screen recording, user will see the recoridng paused due to sensitive inf
 
 
 /*
+Call this method when you want to show User's experience in your app and lead to App Store Review if needed.
+Be aware that Apple App Store review prompt will only be displayed to a user a maximum of three times within a 365-day period, so show App Store Review is not guranteed.
+In Dashboard,you can set the scale of user score to decide to show App Store review prompt or not.
+
+ */
+-(void) showAppStoreReviewPrompt;
+
+/*
 Test in-app survey prompt in multiple choice format.
 The test survey will only show in DEBUG mode and won't have any effect on Production build.
 The answer will not be processed on the server side. The test survey can be skipped by tapping outside of the screen.
