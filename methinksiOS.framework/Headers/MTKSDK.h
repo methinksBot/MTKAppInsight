@@ -106,6 +106,7 @@ In Dashboard,you can set the scale of user score to decide to show App Store rev
  */
 -(void) showAppStoreReviewPrompt;
 
+
 /*
 Test in-app survey prompt in multiple choice format.
 The test survey will only show in DEBUG mode and won't have any effect on Production build.
