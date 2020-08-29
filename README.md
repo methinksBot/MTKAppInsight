@@ -68,7 +68,8 @@ Swift:
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     MTKSDK.shared().setViewController(self, withCustomTitle: "UserOptionSettingView")
-  }```
+  }
+  ```
 
 Obj-C:
 ```objc
