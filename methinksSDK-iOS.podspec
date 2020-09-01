@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "methinksSDK-iOS"
-  spec.version      = "0.4.9"
+  spec.version      = "0.5.0"
   spec.summary      = "methinks iOS SDK for in-app survey and live intercept"
 
   # This description is used to generate tags and improve search results.
