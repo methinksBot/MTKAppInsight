@@ -2,7 +2,7 @@
 //  MTThinkerSDK.h
 //  thinkerSDK-iOS
 //
-//  Created by Philip Yun on 11/10/16.
+//  Created by methinks Technologies Inc on 11/10/16.
 //
 
 #import <Foundation/Foundation.h>
