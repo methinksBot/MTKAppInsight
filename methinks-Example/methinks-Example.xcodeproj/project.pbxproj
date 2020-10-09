@@ -28,6 +28,8 @@
 		7FBC5F6024CA483700177ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FBC5F6324CA483700177ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FBC5F6524CA483700177ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4875DC42530D9CA00B5F611 /* methinksiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = methinksiOS.framework; path = ../methinksiOS.framework; sourceTree = "<group>"; };
+		D4875DCA2530DAD100B5F611 /* methinksiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = methinksiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,8 @@
 		4B8363A8FC9C34ED647CBFC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4875DC42530D9CA00B5F611 /* methinksiOS.framework */,
+				D4875DCA2530DAD100B5F611 /* methinksiOS.framework */,
 				18890E6351704679290657FB /* Pods_methinks_Example.framework */,
 			);
 			name = Frameworks;
@@ -88,7 +92,6 @@
 				65CCFE0775CE1B191CB18CA8 /* Pods-methinks-Example.debug.xcconfig */,
 				07DC9DE7D6CFCC60992A32AC /* Pods-methinks-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,7 +106,7 @@
 				7FBC5F5024CA483700177ED9 /* Sources */,
 				7FBC5F5124CA483700177ED9 /* Frameworks */,
 				7FBC5F5224CA483700177ED9 /* Resources */,
-				A5B8531CA920AD4B342CB6E6 /* [CP] Embed Pods Frameworks */,
+				B038676511601E39FF5A8788 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +164,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A5B8531CA920AD4B342CB6E6 /* [CP] Embed Pods Frameworks */ = {
+		B038676511601E39FF5A8788 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,6 +359,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLL7CQKB32;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "methinks-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,6 +382,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLL7CQKB32;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "methinks-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
