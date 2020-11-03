@@ -94,7 +94,7 @@ If a specific screen contains sensitive personal information, you can set isSens
 During screen recording, user will see the recoridng paused due to sensitive information. It's best to include this function on viewWillAppear:animated method.
  */
 
--(void) setIsSensitiveScreen;
+-(void) setAsSensitiveScreen;
 
 
 

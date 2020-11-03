@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		15MRA9AZe+7Yj3ZSzcXYN5S9FYM=
+		Pwj+Mwiu8tK4OHcwonxuAk715OU=
 		</data>
 		<key>Headers/MTKSDK.h</key>
 		<data>
-		n/QbHbCgWOcwyrDBqeYzH+P9C+g=
+		jcYPDq8YP9miOeOqNDvaPmC4cE8=
 		</data>
 		<key>Headers/methinksiOS.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yD3Sa75lc023NoT4p+LhIwl0Ucw=
+		6X7/N4UcuP2DX8PlR09j2zLGJ9M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,22 +80,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			15MRA9AZe+7Yj3ZSzcXYN5S9FYM=
+			Pwj+Mwiu8tK4OHcwonxuAk715OU=
 			</data>
 			<key>hash2</key>
 			<data>
-			G/71QztMjkQDlhYZC3Da/xYroG6WjuEBHPo1HF658/w=
+			vUuTjz6FkCICqO+NOEukyuSgdXNjwSlTvm96Ex/RWcQ=
 			</data>
 		</dict>
 		<key>Headers/MTKSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n/QbHbCgWOcwyrDBqeYzH+P9C+g=
+			jcYPDq8YP9miOeOqNDvaPmC4cE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5l+JaBXlMWmowjyiHryOMv5/5vTKVip1XH9+61NuIN8=
+			G5S6WfxbcnnhCYnYe5nfCcWuh66jwLIYMsE3hvTk8I0=
 			</data>
 		</dict>
 		<key>Headers/methinksiOS.h</key>
