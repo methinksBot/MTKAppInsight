@@ -112,7 +112,8 @@ Obj-C:
     [[MTKSDK shared] disableViewTracking];
 } 
 ```
-
+<br>
+<br>
 
 methinks SDK takes 1 screenshot per a view periodically to display as representative image in journey tracking. The screenshots are captured from a few very early users, once SDK obtains screenshots from all view, SDK stops taking screenshots. If you think that screenshot could lead to privacy concern, you can set a certain view as **sensitive**. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. The is still be tracked, but SDK will skip taking screenshot. 
 
@@ -165,13 +166,9 @@ Swift:
 Obj-C:
 ```objc
   [[MTKSDK shared] setUserId:@"X1234567"];
-```  
-  
+```
   <br>
   <br>
-  
-  
-
 Add user attributes if available so that you are target specific group of users for in-app survey. For example, if you want to deliver surveys to female users only, first provide the user's gender information to tracking SDK. Value could be number or string and Key must be non-nil string value. You can add multiple key-value combinations and use them for advanced targeting for in-app survey or journey tracking. 
 
 Swift:
