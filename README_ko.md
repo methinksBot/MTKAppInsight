@@ -61,13 +61,13 @@ return YES;
 ```
 <br>
 
-## User Journey Tracking
-methinks SDK tracks user journey based on `UIViewController` class and user's interaction with it. There are a few options you can adjust to get the most comprehensive journey data. 
+## 유저 행동 트랙킹
+methinks SDK는 유저가 탭이나 터치 이벤트를 진행하는 `UIViewController` 클래스를 기반으로 유저의 행동 패턴을 트랙킹합니다. `autoTracking`으로 자동으로 트랙킹할 수 있으며 아래 몇가지 옵션을 향상되고 정확하게 트랙킹할 수 있습니다. 
 
 <br>
 
-### Custom view controller title 
-If you enable `autoTracking`, SDK will capture user journey based on `UIViewController` name. If you want to setup more easy-to-understand name, you can set custom tracking view name. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. 
+### ViewController 커스텀 타이틀
+`autoTracking`이 설정되어 있으면 SDK는 `UIViewController`의 파일 이름을 기반을 이름을 수집합니다. 해당 이름이 복잡하거나 어려우 경우, 쉽게 인지하고 이해할 수 있는 이름으로 변경하여 트랙킹할 수 있습니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 진행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다. 
 
 Swift:
 ```swift
@@ -87,8 +87,8 @@ Obj-C:
 
 <br>
 
-### Add important but not viewController views to auto-tracking
-If you app isn't based on `UIViewController` or is using many views in same `UIViewController` such as `UIHostingController` in `SwiftUI`, you can add any views to journey tracking. A good place would be when the view created and fully visible to user and user is ready to interact with the view. 
+### 중요하지만 ViewController 클래스가 아닌 view 트래킹
+앱이 `UIViewController` 베이스가 아니거나 하나의 `viewController`에서 여러개의 중요한 `view`를 사용하는 경우, `SwiftUI`의 `UIHostingController`를 사용하는 경우 등에서는 수동으로 트랙킹하려는 view를 추가할 수 있습니다. 해당 트랙킹하려는 view가 완전히 `visible`해지기 전에 호출하는 것을 권합니다.  
 
 Swift:
 ```swift
@@ -101,8 +101,8 @@ Obj-C:
 ```
 <br>
 
-### Disable view tracking
-You can exclude a `UIViewController` from auto tracking if the viewController is meaningless in user journey. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. 
+### 특정 view를 트랙킹하 않기
+유저의 행동 패턴 분석에 도움이 안되거나 의미없는 `viewController`의 경우 특정한 `UIViewController`를 `autoTracking`에서 제외 시킬 수 있습니다.  from auto tracking if the viewController is meaningless in user journey. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 진행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
 
 Swift:
 ```swift
@@ -122,7 +122,7 @@ Obj-C:
 <br>
 <br>
 
-methinks SDK takes 1 screenshot per a view periodically to display as representative image in journey tracking. The screenshots are captured from a few very early users, once SDK obtains screenshots from all view, SDK stops taking screenshots. If you think that screenshot could lead to privacy concern, you can set a certain view as **sensitive**. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. The is still be tracked, but SDK will skip taking screenshot. 
+methinks SDK는 대시보드 표시를 위해 트랙킹하는 `view` 당 1장의 스크린샷을 저장합니다. 모든 스크린의 스크린을 저장하면, 더 이상 스크린샷을 찍지 않으며, 아주 최초의 앱 사용자의 스크린만 저장합니다. 다만 이러한 대표 스크린샷 역시 유저의 민감한 정보를 포함하고 있다면 해당 `view`를 **sensitive**로 설정하여 스크린샷을 저장하지 않습니다. 이 경우에도 해당 뷰는 계속 트랙킹됩니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 진행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
 
 Swift:
 ```swift
@@ -142,15 +142,14 @@ Obj-C:
 
 <br>
 
-## In-App Survey
-methinks SDK provides fully-featured in-app survey which is optimized mobile apps with least intrusive presentation. 
-To find out more about survey creation or collection real time responses, check [methinks](https://www.methinks.io).
+## In-App 서베이
+methinks SDK는 모바일에 최적화된 in-app 서베이 기능을 제공합니다. 해당 in-app 서베이는 UX에 저해되지 않는 방식으로 유저들의 의견을 실시간으로 수집할 수 있습니다.  
+서베이의 작성과 실시간 응답 분석은 [methinks](https://www.methinks.io)에서 더 자세히 확인할 수 있습니다.
 
 <br>
 
-### Decide where and when to show in-app survey
-By default, in-app survey will be display at the beginning of new session, before user start any interaction with your app. 
-But if your app has important process at the beginning or has longer loading at the beginning, you can set a specific view controller to display in-app survey. A good place would be right after you initialize the target view controller, 
+### 어디에서 in-app 서베이를 보여줄 지 결정
+기본값으로 in-app 서베이는 유저가 시작하는 새로운 세션의 시작 부분에서 보여지며 이는 methinks SDK를 언제 initiate하느냐에 따라 달라질 수 있습니다. 다만 앱의 시작 부분에서 유저들이 중요한 정보를 취득해야 하거나 액션이 필요한 경우 서베이가 보여지는 위치를 변경할 수 있습니다. 이 경우에는 서베이가 보여져야 하는 `viewController`를 만든 이후 바로 지정할 수 있습니다.  
 
 Swift:
 ```swift
@@ -166,8 +165,8 @@ Obj-C:
 
 <br>
 
-## Associate User to In-App Survey and Journey Tracking
-To get most out of in-app survey and user journey tracking, associating user attributes and custom events is highly recommended. For example, if you associate your identifiable unique userID with methinksSDK, you can specifically target the user to deliver in-app survey or tracking specific journey. 
+## 사용자와 연계 (in-app 서베이, 행동 패턴 분석)
+in-app 서베이와 행동 패턴 분석의 결과를 보다 더 자세히 이해하기 위해서 사용자 특유의 정보와 methinks SDK를 연결하십시오. DB에서 인지할 수 있는 유니크한 유저ID를 연결하여 두면 해당 유저의 행동 패턴이나 타겟화된 in-app 서베이를 진행할 수 있습니다. 
 
 Swift:
 ```swift
@@ -181,7 +180,7 @@ Obj-C:
   <br>
   <br>
   
-Add user attributes if available so that you are target specific group of users for in-app survey. For example, if you want to deliver surveys to female users only, first provide the user's gender information to tracking SDK. Value could be number or string and Key must be non-nil string value. You can add multiple key-value combinations and use them for advanced targeting for in-app survey or journey tracking.   
+유저와 관련하여 좀 더 자세한 attributes들을 어카운트와 연동시켜 둘 수 있습니다. 예를 들어 여성 유저들에게만 in-app 서베이를 진행하고자 한다면, methinks SDK를 통해 해당 유저의 성별 정보를 연경 시켜 둘 수 있습니다.  더 많은 유저의 정보를 `key-value` 조합으로 입력할 수 있습니다. `value`는 숫자 또는 문자열이 될 수 있습니다.   
 
 Swift:
 ```swift
