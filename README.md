@@ -80,7 +80,7 @@ Obj-C:
 ```
 
 
-### Add import view to tracking
+### Add important but not viewController views to auto-tracking
 If you app isn't based on `UIViewController` or is using many views in same `UIViewController` such as `UIHostingController` in `SwiftUI`, you can add any views to journey tracking. A good place would be when the view created and fully visible to user and user is ready to interact with the view. 
 
 Swift:
@@ -111,6 +111,29 @@ Obj-C:
     [[MTKSDK shared] disableViewTracking];
 } 
 ```
+
+methinks SDK takes 1 screenshot per a view periodically to display as representative image in journey tracking. The screenshots are captured from a few very early users, once SDK obtains screenshots from all view, SDK stops taking screenshots. If you think that screenshot could lead to privacy concern, you can set a certain view as **sensitive**. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. The is still be tracked, but SDK will skip taking screenshot. 
+
+
+Swift:
+```swift
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    MTKSDK.shared().setAsSensitiveScreen()
+  }
+```
+
+Obj-C:
+```objc
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[MTKSDK shared] setAsSensitiveScreen];
+} 
+```
+
+
+
+
 
 ## In-App Survey
 methinks SDK provides fully-featured in-app survey which is optimized mobile apps with least intrusive presentation. 
@@ -146,23 +169,14 @@ Obj-C:
   [[MTKSDK shared] setUserId:@"X1234567"];
 ```
 
-Add user attributes if available so that you are target specific group of users for in-app survey. For example, if you want to deliver surveys to female users only, 
+Add user attributes if available so that you are target specific group of users for in-app survey. For example, if you want to deliver surveys to female users only, first provide the user's gender information to tracking SDK. Value could be number or string and Key must be non-nil string value. You can add multiple key-value combinations and use them for advanced targeting for in-app survey or journey tracking. 
 
 Swift:
 ```swift
-  MTKSDK.shared().setUserAttributes:"X1234567"
+  MTKSDK.shared().setUserAttribute("gender", value: "female")
 ```
 
 Obj-C:
 ```objc
-  [[MTKSDK shared] setUserId:@"X1234567"];
+  [[MTKSDK shared] setUserAttribute:@"gender" value:@"female"];
 ```
-
-
-
-
-
-
-
-
-
