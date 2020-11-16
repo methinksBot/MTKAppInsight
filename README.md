@@ -178,7 +178,8 @@ Obj-C:
 ```
   <br>
   <br>
-Add user attributes if available so that you are target specific group of users for in-app survey. For example, if you want to deliver surveys to female users only, first provide the user's gender information to tracking SDK. Value could be number or string and Key must be non-nil string value. You can add multiple key-value combinations and use them for advanced targeting for in-app survey or journey tracking. 
+  
+Add user attributes if available so that you are target specific group of users for in-app survey. For example, if you want to deliver surveys to female users only, first provide the user's gender information to tracking SDK. Value could be number or string and Key must be non-nil string value. You can add multiple key-value combinations and use them for advanced targeting for in-app survey or journey tracking.   
 
 Swift:
 ```swift
