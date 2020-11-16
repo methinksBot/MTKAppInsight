@@ -67,7 +67,7 @@ methinks SDK는 유저가 탭이나 터치 이벤트를 진행하는 `UIViewCont
 <br>
 
 ### ViewController 커스텀 타이틀
-`autoTracking`이 설정되어 있으면 SDK는 `UIViewController`의 파일 이름을 기반을 이름을 수집합니다. 해당 이름이 복잡하거나 어려우 경우, 쉽게 인지하고 이해할 수 있는 이름으로 변경하여 트랙킹할 수 있습니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 진행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다. 
+`autoTracking`이 설정되어 있으면 SDK는 `UIViewController`의 파일 이름을 기반을 이름을 수집합니다. 해당 이름이 복잡하거나 어려우 경우, 쉽게 인지하고 이해할 수 있는 이름으로 변경하여 트랙킹할 수 있습니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 실행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다. 
 
 Swift:
 ```swift
@@ -101,8 +101,8 @@ Obj-C:
 ```
 <br>
 
-### 특정 view를 트랙킹하 않기
-유저의 행동 패턴 분석에 도움이 안되거나 의미없는 `viewController`의 경우 특정한 `UIViewController`를 `autoTracking`에서 제외 시킬 수 있습니다.  from auto tracking if the viewController is meaningless in user journey. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 진행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
+### 특정 view를 트랙킹하지 않기
+유저의 행동 패턴 분석에 도움이 안되거나 의미없는 `viewController`의 경우 특정한 `UIViewController`를 `autoTracking`에서 제외 시킬 수 있습니다.  from auto tracking if the viewController is meaningless in user journey. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 실행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
 
 Swift:
 ```swift
@@ -122,7 +122,7 @@ Obj-C:
 <br>
 <br>
 
-methinks SDK는 대시보드 표시를 위해 트랙킹하는 `view` 당 1장의 스크린샷을 저장합니다. 모든 스크린의 스크린을 저장하면, 더 이상 스크린샷을 찍지 않으며, 아주 최초의 앱 사용자의 스크린만 저장합니다. 다만 이러한 대표 스크린샷 역시 유저의 민감한 정보를 포함하고 있다면 해당 `view`를 **sensitive**로 설정하여 스크린샷을 저장하지 않습니다. 이 경우에도 해당 뷰는 계속 트랙킹됩니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 진행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
+methinks SDK는 대시보드 표시를 위해 트랙킹하는 `view` 당 1장의 스크린샷을 저장합니다. 모든 스크린의 스크린을 저장하면, 더 이상 스크린샷을 찍지 않으며, 아주 최초의 앱 사용자의 스크린만 저장합니다. 다만 이러한 대표 스크린샷 역시 유저의 민감한 정보를 포함하고 있다면 해당 `view`를 **sensitive**로 설정하여 스크린샷을 저장하지 않습니다. 이 경우에도 해당 뷰는 계속 트랙킹됩니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 실행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
 
 Swift:
 ```swift
