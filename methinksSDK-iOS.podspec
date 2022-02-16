@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "methinksSDK-iOS"
-  spec.version      = "0.6.9"
+  spec.version      = "0.7.0"
   spec.summary      = "methinks iOS SDK for in-app survey and live intercept"
 
   # This description is used to generate tags and improve search results.
@@ -52,10 +52,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Philip Yun" => "philip@methinks.io" }
-  # Or just: spec.author    = "Philip Yun"
-  # spec.authors            = { "Philip Yun" => "philip@methinks.io" }
-  # spec.social_media_url   = "https://twitter.com/Philip Yun"
-
+ 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
@@ -63,8 +60,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.platform     = :ios
-  # spec.platform     = :ios, "11.0"
-
   #  When using multiple platforms
     spec.ios.deployment_target = "10.0"
   # spec.osx.deployment_target = "10.7"
@@ -78,8 +73,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => 'https://github.com/methinksBot/methinks-iOS.git', :tag => spec.version.to_s }
-
+   spec.source       = { :git => 'https://github.com/methinksBot/methinks-iOS.git', :tag => spec.version.to_s }
+   
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -88,14 +83,8 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.vendored_frameworks = "methinksiOS.framework"
-  # spec.source_files = "methinksiOS.framework/Headers/MTKSDK.h"
-  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  # spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "methinksiOS.framework/Headers/MTKSDK.h"
-
-
+  spec.vendored_frameworks = 'methinksiOS.framework' 
+  
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -133,6 +122,8 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  # Below will be removed from once most of library is supporting M1
+  
   spec.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
