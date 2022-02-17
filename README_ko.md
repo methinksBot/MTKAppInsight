@@ -22,6 +22,15 @@ pod 'methinksSDK-iOS'
 
 <br>
 
+### Swift Package로 설치
+
+아래 URL을 Swift Package 로 선택하여 설치할 수 있습니다. 
+```
+https://github.com/methinksBot/swift-methinks
+```
+[여기](https://github.com/methinksBot/swift-methinks) 에서 보다 자세한 정보르 참고해 주십시오.
+
+
 ### 수동 인스톨
 
 [여기](https://github.com/methinksBot/methinks-iOS/releases) 에서 최신 버전의 framework를 다운 받을 수 있습니다.
