@@ -21,6 +21,15 @@ pod 'methinksSDK-iOS'
 and run `pod install`.
 <br>
 
+
+### Swift Package
+
+Please add following URL for Swift Package URL
+```
+https://github.com/methinksBot/swift-methinks
+```
+Visit [here](https://github.com/methinksBot/swift-methinks) to find more information.
+
 ### Manual installation
 
 Download most recent SDK at [here](https://github.com/methinksBot/methinks-iOS/releases).
