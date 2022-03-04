@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,22 +15,7 @@
 		7FBC5F6124CA483700177ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC5F6024CA483700177ED9 /* Assets.xcassets */; };
 		7FBC5F6424CA483700177ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC5F6224CA483700177ED9 /* LaunchScreen.storyboard */; };
 		D4481E9325311267002FCE85 /* methinksiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4481E9225311267002FCE85 /* methinksiOS.framework */; };
-		D4481E9425311267002FCE85 /* methinksiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4481E9225311267002FCE85 /* methinksiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D4481E9525311267002FCE85 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D4481E9425311267002FCE85 /* methinksiOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07DC9DE7D6CFCC60992A32AC /* Pods-methinks-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-methinks-Example.release.xcconfig"; path = "Target Support Files/Pods-methinks-Example/Pods-methinks-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +110,7 @@
 				7FBC5F5024CA483700177ED9 /* Sources */,
 				7FBC5F5124CA483700177ED9 /* Frameworks */,
 				7FBC5F5224CA483700177ED9 /* Resources */,
-				D4481E9525311267002FCE85 /* Embed Frameworks */,
+				6449C9765E6E942B714DBE58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +168,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6449C9765E6E942B714DBE58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-methinks-Example/Pods-methinks-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-methinks-Example/Pods-methinks-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-methinks-Example/Pods-methinks-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D83F7BFF5A82E032F2A1826E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
