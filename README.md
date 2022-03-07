@@ -1,4 +1,4 @@
-# methinksSDK-iOS
+# MTKAppInsight SDK
 
 The methinks iOS SDK allows you to track user journey and survey specific groups of your mobile app users. Understanding specific user behaviors and journey will be done with single line of code and initialize in-app survey for specific target group of users. Check more detail in [methinks](https://www.methinks.io) to create your account and acquire product key to begin with.  If you're interested in Android version go [here](https://www.methinks.io).
 <br>
@@ -14,7 +14,7 @@ We recommend using Cocoapods to get methinksSDK for iOS.
 Define pod in your `Podfile`:
 ```ruby
 
-pod 'methinksSDK-iOS'
+pod 'MTKAppInsight'
 
 ```
 
