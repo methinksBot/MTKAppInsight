@@ -1,6 +1,6 @@
 # MTKAppInsight
 
-methinks iOS SDK는 당신의 모바일을 앱을 사용하는 유저들의 행동을 트랙킹, 분석하고 적절하 순간에 in-app survey를 할 수 있게 해주는 SDK입니다. 구체적이 내용은 [methinks](https://www.methinks.io) 에서 확인하시고 사인업 후 clientKey와 productKey를 발급 받아 사용할 수 있습니다. 안드로이드 버전은 [여기](https://www.methinks.io)를 참고하세요.
+MTKAppInsight SDK는 당신의 모바일을 앱을 사용하는 유저들의 행동을 트랙킹, 분석하고 적절하 순간에 in-app survey를 할 수 있게 해주는 SDK입니다. 구체적이 내용은 [methinks](https://www.methinks.io) 에서 확인하시고 사인업 후 clientKey와 productKey를 발급 받아 사용할 수 있습니다. 안드로이드 버전은 [여기](https://www.methinks.io)를 참고하세요.
 <br>
 ## 버전 요구 사항
 
