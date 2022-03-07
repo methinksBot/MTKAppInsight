@@ -1,16 +1,16 @@
 # MTKAppInsight SDK
 
-The methinks iOS SDK allows you to track user journey and survey specific groups of your mobile app users. Understanding specific user behaviors and journey will be done with single line of code and initialize in-app survey for specific target group of users. Check more detail in [methinks](https://www.methinks.io) to create your account and acquire product key to begin with.  If you're interested in Android version go [here](https://www.methinks.io).
+MTKAppInsight SDK allows you to track user journey and survey specific groups of your mobile app users. Understanding specific user behaviors and journey will be done with single line of code and initialize in-app survey for specific target group of users. Check more detail in [methinks](https://www.methinks.io) to create your account and acquire product key to begin with.  If you're interested in Android version go [here](https://www.methinks.io).
 <br>
 ## Requirements
 
-SDK works on iOS 10 or higher version.
+MTKAppInsight SDK works on iOS 10 or higher version.
 <br>
 ## Installation
 
 ### CocoaPods
 
-We recommend using Cocoapods to get methinksSDK for iOS. 
+We recommend using Cocoapods to get MTKAppInsight for iOS. 
 Define pod in your `Podfile`:
 ```ruby
 
@@ -32,8 +32,8 @@ Visit [here](https://github.com/methinksBot/swift-methinks) to find more informa
 
 ### Manual installation
 
-Download most recent SDK at [here](https://github.com/methinksBot/methinks-iOS/releases).
-Once download the zipped file, embed `methinksiOS.framework` to your project target. 
+Download most recent SDK at [here](https://github.com/methinksBot/MTKAppInsight/releases).
+Once download the zipped file, embed `MTKAppInsight.xcframework` to your project target. 
 <br>
 
 ## Setup
@@ -69,7 +69,7 @@ return YES;
 <br>
 
 ## User Journey Tracking
-methinks SDK tracks user journey based on `UIViewController` class and user's interaction with it. There are a few options you can adjust to get the most comprehensive journey data. 
+MTKAppInsight SDK tracks user journey based on `UIViewController` class and user's interaction with it. There are a few options you can adjust to get the most comprehensive journey data. 
 
 <br>
 
@@ -129,7 +129,7 @@ Obj-C:
 <br>
 <br>
 
-methinks SDK takes 1 screenshot per a view periodically to display as representative image in journey tracking. The screenshots are captured from a few very early users, once SDK obtains screenshots from all view, SDK stops taking screenshots. If you think that screenshot could lead to privacy concern, you can set a certain view as **sensitive**. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. The is still be tracked, but SDK will skip taking screenshot. 
+MTKAppInsight SDK takes 1 screenshot per a view periodically to display as representative image in journey tracking. The screenshots are captured from a few very early users, once SDK obtains screenshots from all view, SDK stops taking screenshots. If you think that screenshot could lead to privacy concern, you can set a certain view as **sensitive**. A good place will be `viewDidAppear:` in your `UIViewController`, before user interact with current view controller. The is still be tracked, but SDK will skip taking screenshot. 
 
 Swift:
 ```swift
@@ -150,7 +150,7 @@ Obj-C:
 <br>
 
 ## In-App Survey
-methinks SDK provides fully-featured in-app survey which is optimized mobile apps with least intrusive presentation. 
+MTKAppInsight SDK provides fully-featured in-app survey which is optimized mobile apps with least intrusive presentation. 
 To find out more about survey creation or collection real time responses, check [methinks](https://www.methinks.io).
 
 <br>
