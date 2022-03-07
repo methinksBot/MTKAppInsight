@@ -1,6 +1,0 @@
-framework module MTKAppInsight {
-  umbrella header "MTKAppInsight.h"
-
-  export *
-  module * { export * }
-}

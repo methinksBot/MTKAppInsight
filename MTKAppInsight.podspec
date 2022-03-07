@@ -73,7 +73,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-   spec.source       = { :git => 'https://github.com/methinksBot/methinks-iOS.git', :tag => spec.version.to_s }
+   spec.source       = { :git => 'https://github.com/methinksBot/MTKAppInsight.git', :tag => spec.version.to_s }
    
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,7 +83,8 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.vendored_frameworks = 'MTKAppInsight.xcframework' 
+  spec.vendored_frameworks = 'MTKAppInsight.xcframework'
+  # spec.vendored_frameworks = 'MTKAppInsight.xcframework/ios-arm64_armv7/MTKAppInsight.framework', 'MTKAppInsight.xcframework/ios-arm64_i386_x86_64-simulator/MTKAppInsight.framework'  
   
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,7 +105,7 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+  # spec.framework = "MTKAppInsight"
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
