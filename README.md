@@ -45,7 +45,7 @@ Enable `autoTracking` to automatically analyze user journey.
 
 Swift:
 ```swift
-import methinksSDK_iOS
+import MTKAppInsight
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -57,7 +57,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 Obj-C:
 ```objc
-#import <methinksiOS/MTKSDK.h>
+#import <MTKAppInsight/MTKSDK.h>
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
