@@ -1,10 +1,10 @@
-# methinksSDK-iOS
+# MTKAppInsight
 
 methinks iOS SDK는 당신의 모바일을 앱을 사용하는 유저들의 행동을 트랙킹, 분석하고 적절하 순간에 in-app survey를 할 수 있게 해주는 SDK입니다. 구체적이 내용은 [methinks](https://www.methinks.io) 에서 확인하시고 사인업 후 clientKey와 productKey를 발급 받아 사용할 수 있습니다. 안드로이드 버전은 [여기](https://www.methinks.io)를 참고하세요.
 <br>
 ## 버전 요구 사항
 
-methinks iOS SDK는 최소 iOS 10 또는 상위 버전에서 작동합니다. 
+MTKAppInsight SDK는 최소 iOS 10 또는 상위 버전에서 작동합니다. 
 <br>
 ## 인스톨
 
@@ -14,7 +14,7 @@ methinks SDK는 Cocoapods 로으 설치를 권장합니다.
 `Podfile` 파일에 아래 내용을 추가 주십시오:
 ```ruby
 
-pod 'methinksSDK-iOS'
+pod 'MTKAppInsight'
 
 ```
 
@@ -33,7 +33,7 @@ https://github.com/methinksBot/swift-methinks
 
 ### 수동 인스톨
 
-[여기](https://github.com/methinksBot/methinks-iOS/releases) 에서 최신 버전의 framework를 다운 받을 수 있습니다.
+[여기](https://github.com/methinksBot/MTKAppInsight/releases) 에서 최신 버전의 framework를 다운 받을 수 있습니다.
 다운로드한 zip 파일에서 `methinksiOS.framework` 을 찾아 프로젝트 타겟에 추가하여 주십시오. 
 
 <br>
@@ -47,7 +47,7 @@ methinks iOS SDK는 앱의 라이프 사이클이 시작될 때 initialize 해�
 
 Swift:
 ```swift
-import methinksSDK_iOS
+import MTKAppInsight
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -59,7 +59,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 Obj-C:
 ```objc
-#import <methinksiOS/MTKSDK.h>
+#import <MTKAppInsight/MTKSDK.h>
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
