@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "methinks iOS SDK for in-app survey and live intercept to understand your users and customers."
 
-  spec.homepage     = "https://www.methinks.io"#"https://cocoapods.org/pods/methinksSDK-iOS"
+  spec.homepage     = "https://github.com/methinksBot/MTKAppInsight"#"https://cocoapods.org/pods/methinksSDK-iOS"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
