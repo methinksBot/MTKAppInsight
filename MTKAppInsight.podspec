@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MTKAppInsight"
-  spec.version      = "0.7.3"
+  spec.version      = "0.7.4"
   spec.summary      = "methinks iOS SDK for in-app survey and live intercept"
 
   # This description is used to generate tags and improve search results.
