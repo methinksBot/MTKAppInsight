@@ -34,7 +34,7 @@ https://github.com/methinksBot/swift-methinks
 ### 수동 인스톨
 
 [여기](https://github.com/methinksBot/MTKAppInsight/releases) 에서 최신 버전의 framework를 다운 받을 수 있습니다.
-다운로드한 zip 파일에서 `methinksiOS.framework` 을 찾아 프로젝트 타겟에 추가하여 주십시오. 
+다운로드한 zip 파일에서 `MTKAppInsight.xcframework` 을 찾아 프로젝트 타겟에 추가하여 주십시오. 
 
 <br>
 
@@ -71,7 +71,7 @@ return YES;
 <br>
 
 ## 유저 행동 트랙킹
-methinks SDK는 유저가 탭이나 터치 이벤트를 진행하는 `UIViewController` 클래스를 기반으로 유저의 행동 패턴을 트랙킹합니다. `autoTracking`으로 자동으로 트랙킹할 수 있으며 아래 몇가지 옵션을 향상되고 정확하게 트랙킹할 수 있습니다. 
+MTKAppInsight SDK는 유저가 탭이나 터치 이벤트를 진행하는 `UIViewController` 클래스를 기반으로 유저의 행동 패턴을 트랙킹합니다. `autoTracking`으로 자동으로 트랙킹할 수 있으며 아래 몇가지 옵션을 향상되고 정확하게 트랙킹할 수 있습니다. 
 
 <br>
 
@@ -131,7 +131,7 @@ Obj-C:
 <br>
 <br>
 
-methinks SDK는 대시보드 표시를 위해 트랙킹하는 `view` 당 1장의 스크린샷을 저장합니다. 모든 스크린의 스크린을 저장하면, 더 이상 스크린샷을 찍지 않으며, 아주 최초의 앱 사용자의 스크린만 저장합니다. 다만 이러한 대표 스크린샷 역시 유저의 민감한 정보를 포함하고 있다면 해당 `view`를 **sensitive**로 설정하여 스크린샷을 저장하지 않습니다. 이 경우에도 해당 뷰는 계속 트랙킹됩니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 실행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
+MTKAppInsight SDK는 대시보드 표시를 위해 트랙킹하는 `view` 당 1장의 스크린샷을 저장합니다. 모든 스크린의 스크린을 저장하면, 더 이상 스크린샷을 찍지 않으며, 아주 최초의 앱 사용자의 스크린만 저장합니다. 다만 이러한 대표 스크린샷 역시 유저의 민감한 정보를 포함하고 있다면 해당 `view`를 **sensitive**로 설정하여 스크린샷을 저장하지 않습니다. 이 경우에도 해당 뷰는 계속 트랙킹됩니다. 이 코드는 유저가 `viewController`와 상호 작용을 하기 전에 실행하는 것이 좋으며 `viewDidAppear:` 을 권장합니다.  
 
 Swift:
 ```swift
@@ -152,7 +152,7 @@ Obj-C:
 <br>
 
 ## In-App 서베이
-methinks SDK는 모바일에 최적화된 in-app 서베이 기능을 제공합니다. 해당 in-app 서베이는 UX에 저해되지 않는 방식으로 유저들의 의견을 실시간으로 수집할 수 있습니다.  
+MTKAppInsight SDK는 모바일에 최적화된 in-app 서베이 기능을 제공합니다. 해당 in-app 서베이는 UX에 저해되지 않는 방식으로 유저들의 의견을 실시간으로 수집할 수 있습니다.  
 서베이의 작성과 실시간 응답 분석은 [methinks](https://www.methinks.io)에서 더 자세히 확인할 수 있습니다.
 
 <br>
