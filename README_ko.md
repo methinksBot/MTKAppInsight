@@ -10,7 +10,7 @@ MTKAppInsight SDK는 최소 iOS 10 또는 상위 버전에서 작동합니다.
 
 ### CocoaPods
 
-methinks SDK는 Cocoapods 로으 설치를 권장합니다. 
+MTKAppInsight SDK는 Cocoapods로의 설치를 권장합니다. 
 `Podfile` 파일에 아래 내용을 추가 주십시오:
 ```ruby
 
